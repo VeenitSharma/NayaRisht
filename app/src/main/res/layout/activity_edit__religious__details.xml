@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.villupuram.nayarishta.Edit_Religious_Details">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/red"
+        android:id="@+id/topbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:onClick="back"
+            android:layout_height="match_parent">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/arrowwhite"
+            android:onClick="back"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            />
+
+            </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:id="@+id/saveReligion"
+            android:onClick="save"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:textSize="18dp"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/topbar"
+        android:id="@+id/usersec"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/addphotobtn"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/addphoto"
+                android:background="@drawable/user_photo"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/user_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/user"
+                    android:background="@drawable/user_photo_editprofile"
+                    app:civ_border_width="1dp"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/addphotobtn"
+            android:id="@+id/uploadphoto"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Picture"
+                android:textColor="#636363"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/picturebtn"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:id="@+id/basic_details"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/usersec"
+        android:paddingRight="20dp"
+        android:layout_height="54dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Religious Details"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bottomarrow"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/basic_details"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="30dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Religious"
+                android:id="@+id/firstname"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapeforprofile"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/firstname"
+                android:id="@+id/country"
+                android:layout_marginBottom="30dp"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/religious"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caste"
+                android:layout_below="@+id/country"
+                android:layout_marginTop="10dp"
+                android:id="@+id/cname"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapeforprofile"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/cname"
+                android:id="@+id/county"
+                android:layout_marginBottom="30dp"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/caste"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subcaste"
+                android:layout_below="@+id/county"
+                android:layout_marginTop="10dp"
+                android:id="@+id/city"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapeforprofile"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/city"
+                android:id="@+id/countyfield"
+                android:layout_marginBottom="30dp"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/subcaste"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gotra"
+                android:layout_below="@+id/countyfield"
+                android:layout_marginTop="10dp"
+                android:id="@+id/annual"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapeforprofile"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/annual"
+                android:id="@+id/annualfield"
+                android:layout_marginBottom="30dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/gotra"
+                    android:background="@android:color/transparent"
+                    >
+                </EditText>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mother Toungue"
+                android:layout_below="@+id/annualfield"
+                android:layout_marginTop="10dp"
+                android:id="@+id/annualfgdg"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapeforprofile"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/annualfgdg"
+                android:id="@+id/gf"
+                android:layout_marginBottom="30dp"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/language"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

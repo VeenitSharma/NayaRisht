@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#1732dc</color>
+    <color name="colorAccent">#ff4043</color>
+    <color name="yellow">#ffb901</color>
+    <color name="red">#ff0000</color>
+    <color name="gray">#776d64</color>
+    <color name="my_spinner_text_color">#808080</color>
+
+
+
+    <color name="pager_bullet_active">#836556</color>
+    <color name="pager_bullet_inactive">#219382</color>
+    <color name="pager_bullet_text_indicator">#ffffff</color>
+
+
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d3d3d3</color>
+    <color name="dot_dark_screen2">#d3d3d3</color>
+    <color name="dot_dark_screen3">#d3d3d3</color>
+    <color name="dot_dark_screen4">#d3d3d3</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#ff0000</color>
+    <color name="dot_light_screen2">#ff0000</color>
+    <color name="dot_light_screen3">#ff0000</color>
+    <color name="dot_light_screen4">#ff0000</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+    <color name="viewBg">#ffffff</color>
+    <color name="album_title">#4c4c4c</color>
+</resources>

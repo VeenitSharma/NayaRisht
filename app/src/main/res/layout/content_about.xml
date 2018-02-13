@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.villupuram.nayarishta.About"
+    tools:showIn="@layout/app_bar_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:padding="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:text="NayaRishta.com is an organisation based and operated from the United Kingdom. NayaRishta is secured and advanced matrimonial site with chatting facility for members of all ages and backgrounds.
+
+NayaRishta.com offers a free registration to visitors from all countries around the globe, a free profile, free search tools, free picture upload and free expression of Interest.
+
+We have built a safe and hassle-free matrimonial environment where members can introduce themselves and communicate via the internet to other members . A secure internal email system makes communication between members a private matter and the opportunity to create a list of your favourite members means you can find them again easily.
+
+Instant messenger is also available for those who like chatting on one to one basis.
+
+NayaRishta.com enables members to escalate their online feelings beyond just text and still photographs. This improves the odds of marriage success in the real world, and most importantly, lowers the stress level associated with meeting someone for the first time - No more Force Marriages."
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.villupuram.nayarishta.Contact"
+    tools:showIn="@layout/app_bar_contact"
+    android:layout_marginBottom="40dp"
+    android:background="#f3f3f3"
+    >
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.villupuram.nayarishta.nayarishta.Contact"
+    tools:showIn="@layout/app_bar_contact"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingTop="5sp"
+        android:textSize="16dp"
+        android:text="Full Name"
+        android:textColor="#7a7a7a"
+        android:textStyle="bold"
+
+       />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/ftext"
+        android:layout_below="@+id/fname"
+        android:layout_marginTop="6dp"
+        android:background="#fff"
+        >
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="Full name"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:background="@android:color/transparent"
+        android:inputType="textPersonName"
+    />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5sp"
+        android:layout_below="@+id/ftext"
+        android:textSize="16dp"
+        android:text="Email"
+        android:textColor="#7a7a7a"
+        android:textStyle="bold"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/etext"
+        android:layout_below="@+id/ename"
+        android:layout_marginTop="6dp"
+        android:background="#fff"
+        >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="Email address"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5sp"
+        android:layout_below="@+id/etext"
+        android:textSize="16dp"
+        android:text="Subject"
+        android:textColor="#7a7a7a"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/subtext"
+        android:layout_below="@+id/subject"
+        android:layout_marginTop="6dp"
+        android:background="#fff"
+        >
+
+        <EditText
+            android:id="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Subject"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5sp"
+        android:layout_below="@+id/subtext"
+        android:textSize="16dp"
+        android:text="Message"
+        android:textColor="#7a7a7a"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/msgbox"
+        android:layout_below="@+id/msg"
+        android:layout_marginTop="6dp"
+        android:background="#fff"
+        >
+
+        <EditText
+            android:id="@+id/msgtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:hint="Your message"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msgbox"
+        android:layout_marginTop="20dp"
+        android:id="@+id/captchaimg"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/captchaimg"
+        android:text="Refresh Captcha"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/referece"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/fhkjdashfk"
+        android:layout_below="@+id/referece"
+        android:layout_marginTop="6dp"
+        android:background="#fff"
+        >
+
+        <EditText
+            android:id="@+id/captchatext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:hint="Your text"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+
+
+
+        />
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@id/fhkjdashfk"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:id="@+id/submit"
+        android:onClick="submit"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:background="@drawable/shape"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

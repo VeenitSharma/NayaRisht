@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.villupuram.nayarishta.PartnerSetting"
+    tools:showIn="@layout/app_bar_partner_setting">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/g"
+                android:id="@+id/topsec"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/dash"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:id="@+id/sec1"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/addphotobtn"
+                            android:layout_marginTop="20dp"
+                            >
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/addphotocircle"
+                                    />
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/camera"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"
+                                    android:id="@+id/camera"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add Photo"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/camera"
+                                    />
+
+
+
+
+                            </RelativeLayout>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/addphotobtn"
+
+
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nandita Goswami"
+                                android:textColor="#ffffff"
+                                android:textSize="20dp"
+                                android:id="@+id/one"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NRID00001"
+                                android:textColor="#ffffff"
+                                android:id="@+id/two"
+                                android:textSize="17dp"
+                                android:layout_below="@+id/one"
+                                />
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/topsec"
+                android:id="@+id/sec3"
+                android:background="#ffffff"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/sec2"
+                    android:weightSum="3"
+                    android:gravity="center_vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:id="@+id/go_profile"
+                        >
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="26dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/up"
+                            android:id="@+id/pic1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pic1"
+                            android:text="My Profile"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/go_album"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="26dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/ic_album_unselected"
+                            android:id="@+id/pic2"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pic2"
+                            android:text="My Profile"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginTop="5dp"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:id="@+id/go_ps"
+                        >
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="26dp"
+                            android:background="@drawable/ic_psetting_selected"
+                            android:id="@+id/pic3"
+                            android:layout_centerHorizontal="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pic3"
+                            android:text="Partner Settings"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/yellow"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/sec3"
+                android:fillViewport="true"
+                android:background="#ffffff"
+               >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/sec3"
+                android:background="#f8f8f8"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="i'm Looking for a"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/text1"
+                    android:textSize="15dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text1"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/radioBtmview"
+                    android:paddingLeft="10dp"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/radiobtngrp"
+                        >
+
+                        <RadioButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:button="@null"
+                            android:id="@+id/bridebtn"
+                            android:background="@drawable/profile_setting_check_circle"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bride"
+                            android:textSize="15dp"
+
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <RadioButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="25dp"
+                            android:button="@null"
+                            android:id="@+id/groombtn"
+                            android:background="@drawable/profile_setting_uncheck_cricle"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Groom"
+                            android:textSize="15dp"
+
+                            android:layout_marginLeft="10dp"
+                            />
+
+
+
+
+                    </RadioGroup>
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:layout_below="@+id/radioBtmview"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/text2"
+                    android:textSize="15dp"
+
+                    />
+
+
+             <SeekBar
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/text2"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/seekbar"
+                 />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:id="@+id/htext"
+                    android:textSize="15dp"
+
+                    android:layout_below="@+id/seekbar"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/heightoption"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_below="@+id/htext"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_weight="1"
+                        android:layout_marginRight="3dp"
+                        >
+                    <Spinner
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/heightA"
+
+                        >
+
+                    </Spinner>
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="to"
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        >
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:entries="@array/heightB"
+
+
+                            >
+
+                        </Spinner>
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Marital Status"
+                    android:id="@+id/status"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/heightoption"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/statusgroup"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/status"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        >
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:entries="@array/maritalstatus"
+                            >
+
+                        </Spinner>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Have Children"
+                    android:id="@+id/childrentext"
+                    android:textSize="16dp"
+                    android:layout_below="@+id/statusgroup"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/childrentext"
+                    android:id="@+id/childrens"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="30dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        >
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:entries="@array/childrens"
+                            >
+
+                        </Spinner>
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1080503703383",
+    "firebase_url": "https://nayarishta-app-8d5f4.firebaseio.com",
+    "project_id": "nayarishta-app-8d5f4",
+    "storage_bucket": "nayarishta-app-8d5f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080503703383:android:b97ef2e375471a45",
+        "android_client_info": {
+          "package_name": "com.villupuram.nayarishta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080503703383-12719q4isnck09fjjvm7khebq8e248t1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.villupuram.nayarishta",
+            "certificate_hash": "e5e90671e0bff046551196d3a3d238076805c6b7"
+          }
+        },
+        {
+          "client_id": "1080503703383-8tsp6fqo2ba3bcov9nd1surpi22po31l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8lOhGDtwYM13MZOPZcPYYhXpXS6ottiE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080503703383-8tsp6fqo2ba3bcov9nd1surpi22po31l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

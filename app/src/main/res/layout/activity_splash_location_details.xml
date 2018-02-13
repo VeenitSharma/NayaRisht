@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.villupuram.nayarishta.SplashLocationDetails">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#b61b1b"
+        android:id="@+id/topbar"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Information"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="17dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/logout"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:layout_above="@+id/bottom"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Select your Country"
+                android:id="@+id/firstname"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapeforprofile"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/firstname"
+                android:id="@+id/countryy"
+                android:layout_marginBottom="30dp"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:spinnerMode="dialog"
+                    android:id="@+id/countrylocation"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Select your County"
+                android:layout_below="@+id/countryy"
+                android:layout_marginTop="20dp"
+                android:id="@+id/cname"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapeforprofile"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/cname"
+                android:id="@+id/county"
+                android:layout_marginBottom="30dp"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/state"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your City"
+                android:layout_below="@+id/county"
+                android:layout_marginTop="20dp"
+                android:id="@+id/city"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapeforprofile"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/city"
+                android:id="@+id/countyfield"
+                android:layout_marginBottom="30dp"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/citlocationy"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Residency Status"
+                android:layout_below="@+id/countyfield"
+                android:layout_marginTop="20dp"
+                android:id="@+id/height"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/shapeforprofile"
+                android:layout_below="@+id/height"
+                android:layout_marginTop="10dp"
+                android:id="@+id/residencee"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="Residency Status"
+                    android:paddingLeft="20dp"
+                    android:id="@+id/residence"
+                    />
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#b61b1b"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Continue"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/continuetext"
+            />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/continuetext"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/warrow"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

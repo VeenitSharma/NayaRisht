@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfdfd"
+    tools:context="com.villupuram.nayarishta.SplashPersonalDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#b61b1b"
+        android:id="@+id/topbar"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textAllCaps="true"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/logout"
+            />
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/sc"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/topbar"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+
+
+            <ImageButton
+                android:id="@+id/male"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/ic_search_male"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/female"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/female_gender_selected" />
+        </LinearLayout>
+
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/genderlayout"
+        android:visibility="gone"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/maletext"
+                android:layout_marginLeft="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fmaletext"
+                android:layout_alignParentRight="true"
+                android:text="Female"
+                android:layout_marginRight="19dp"
+                 />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/dated"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/genderlayout"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/splashmenus"
+                android:visibility="gone"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:hint="Date of birth"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:id="@+id/date"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/dated"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mother Tongue"
+                android:layout_below="@+id/annualfield"
+                android:layout_marginTop="5dp"
+                android:id="@+id/annualfgdg"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/splashmenus"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/annualfgdg"
+                android:id="@+id/gf"
+                android:layout_marginBottom="15dp"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/languagedff"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Religious"
+                android:layout_below="@+id/gf"
+                android:id="@+id/firstname"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/splashmenus"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/firstname"
+                android:id="@+id/country"
+                android:layout_marginBottom="15dp"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/religious"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marital Status"
+                android:layout_below="@+id/country"
+                android:layout_marginTop="5dp"
+                android:id="@+id/maritaltext"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/splashmenus"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/maritaltext"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/marit"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:entries="@array/maritalstats"
+                    android:id="@+id/mssdfg"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have Children"
+                android:layout_below="@+id/marit"
+                android:layout_marginTop="5dp"
+                android:id="@+id/have"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/splashmenus"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/have"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/children"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:entries="@array/children"
+                    android:id="@+id/childrenspinner"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:layout_below="@+id/children"
+                android:layout_marginTop="15dp"
+                android:id="@+id/heighttt"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/splashmenus"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/heighttt"
+                android:id="@+id/heightlayout"
+                android:layout_marginBottom="40dp"
+                >
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/heightPI"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#b61b1b"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Continue"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/continuetext"
+            />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/continuetext"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/warrow"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

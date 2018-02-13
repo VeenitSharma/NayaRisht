@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="80dp"
+    android:background="#fff"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/interestItems"
+        android:layout_toLeftOf="@+id/deletebtn"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/namelayout"
+            android:layout_marginRight="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="17dp"
+                android:textColor="#504e4e"
+                android:textAllCaps="true"
+                android:id="@+id/user_name_inbox"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-10-05"
+                android:textColor="#504e4e"
+                android:textSize="12dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/date_inbox"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namelayout"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NRUP"
+                android:id="@+id/nrup"
+                android:textSize="15dp"
+                android:textColor="#9e9d9d"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#9e9d9d"
+                android:layout_toRightOf="@+id/nrup"
+                android:id="@+id/id_text"
+                />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

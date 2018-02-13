@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/profile"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/search"
+            android:title="Search" />
+        <item
+            android:id="@+id/compose"
+            android:title="Compose" />
+        <item
+            android:id="@+id/Messenger"
+            android:title="Messenger" />
+        <item
+            android:id="@+id/inbox"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/sent"
+            android:title="Sent" />
+        <item
+            android:id="@+id/drafts"
+            android:title="Drafts" />
+        <item
+            android:id="@+id/isend"
+            android:title="Intrest Send" />
+        <item
+            android:id="@+id/irecieved"
+            android:title="Intrest Recieved" />
+        <item
+            android:id="@+id/yaccept"
+            android:title="You Accepted" />
+        <item
+            android:id="@+id/accepty"
+            android:title="Accepted You" />
+        <item
+            android:id="@+id/ydecline"
+            android:title="You Declined" />
+        <item
+            android:id="@+id/decliney"
+            android:title="Declined You" />
+        <!--<item-->
+            <!--android:id="@+id/for_accept"-->
+            <!--android:title="For accept" />-->
+        <!--<item-->
+            <!--android:id="@+id/to_accept"-->
+            <!--android:title="To Accept" />-->
+        <item
+            android:id="@+id/about"
+            android:title="About" />
+
+        <item
+            android:id="@+id/membership"
+            android:title="Membership" />
+        <item
+            android:id="@+id/contact"
+            android:title="Contact" />
+
+        <item
+            android:id="@+id/change"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/logout"
+            android:title="Logout" />
+
+</menu>

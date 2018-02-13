@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_margin="10dp"
+    tools:context="com.villupuram.nayarishta.EditProfile_adminMessage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#BD2121"
+        android:id="@+id/topbar"
+        android:alpha="0.7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:text="Notify To User"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/crossbtn"
+        android:layout_height="54dp">
+
+        <ImageView android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:background="@drawable/ic_cross"
+            android:layout_marginRight="20dp"
+            android:id="@+id/cross"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:layout_marginTop="30dp"
+        android:id="@+id/except"
+        android:layout_margin="10dp"
+        android:textColor="#008000"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secline"
+        android:text=""
+        android:layout_below="@+id/except"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        />
+
+
+
+</RelativeLayout>

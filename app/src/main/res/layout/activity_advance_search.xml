@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.villupuram.nayarishta.AdvanceSearch">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/red"
+        android:id="@+id/topbar"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:id="@+id/back"
+            android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/arrowwhite"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advance Search"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:fillViewport="true"
+        android:layout_marginBottom="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/topbar"
+            android:background="#f8f8f8"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/agetext"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="Age"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:textColor="#717171"
+                android:layout_marginTop="18dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/seekbarLayout"
+                android:layout_below="@+id/agetext"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/seekbartext"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:hint="18"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content" />
+
+
+
+                <!--<com.appyvet.rangebar.RangeBar-->
+                    <!--android:id="@+id/seekbar2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--custom:tickStart="18"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--custom:tickEnd="70"-->
+                    <!--android:layout_marginRight="50dp"-->
+                    <!--custom:tickInterval="1"-->
+                    <!--custom:rangeBarColor="#b5b6b5"-->
+                    <!--custom:tickColor="#007aff"-->
+                    <!--custom:pinColor="@color/red"-->
+                    <!--custom:selectorColor="#f3f3f3"-->
+                    <!--custom:selectorSize="15dp"-->
+                    <!--android:layout_alignParentTop="true" />-->
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                    android:id="@+id/seekbar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    custom:min_value="18"
+                    custom:max_value="70"
+                    custom:left_thumb_color="#f3f3f3"
+                    custom:right_thumb_color="#f3f3f3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentTop="true"
+                    custom:bar_color="#f95959"
+                    custom:bar_highlight_color="@color/red"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/seekbar_right"
+                    android:hint="70"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="11dp"
+                android:paddingTop="5dp"
+                android:text="Height"
+                android:textSize="15dp"
+                android:textColor="#717171"
+                android:layout_below="@+id/seekbarLayout"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/heightoption"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_below="@+id/height"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:layout_weight="1"
+                    android:layout_marginRight="4dp"
+                    >
+                    <Spinner
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/heightfrom"
+                        android:entries="@array/heightA"
+
+                        >
+
+                    </Spinner>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="to"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    >
+                    <Spinner
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/heightto"
+                        android:entries="@array/heightB"
+
+
+                        >
+
+                    </Spinner>
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marital Status"
+                android:id="@+id/status"
+                android:textSize="15dp"
+                android:textColor="#717171"
+                android:layout_below="@+id/heightoption"
+                android:layout_marginTop="20dp"
+
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/status"
+                android:id="@+id/statusgroup"
+                android:background="#ffffff"
+                android:layout_marginTop="5dp"
+
+
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/addmstatusss"
+                    android:fillViewport="true"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/maritalstatus"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="7dp"
+                            android:hint="select language"
+                            />
+                    </RelativeLayout>
+                </ScrollView>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#f7f7f7"
+                    android:id="@+id/addmstatusss"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/addmore"
+                            android:id="@+id/image"
+                            />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/Religion"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="11dp"
+                android:paddingTop="5dp"
+                android:text="Religion"
+                android:textSize="15dp"
+                android:textColor="#717171"
+                android:layout_below="@+id/statusgroup"
+                />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/religionfield"
+                android:layout_below="@+id/Religion"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    >
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/community"
+                        android:id="@+id/religious"
+                        >
+
+                    </Spinner>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/catetext"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="11dp"
+                android:paddingTop="5dp"
+                android:text="Caste"
+                android:textSize="15dp"
+                android:textColor="#717171"
+                android:layout_below="@+id/religionfield"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/catetext"
+                android:id="@+id/castelayout"
+                android:background="#ffffff"
+                >
+
+                <Spinner
+                    android:id="@+id/castespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="20dp"
+                    android:paddingTop="5dp"
+                    />
+            </RelativeLayout>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="11dp"
+                android:paddingTop="5dp"
+                android:text="Mother Tongue"
+                android:textSize="15dp"
+                android:textColor="#717171"
+                android:layout_below="@+id/castelayout"
+                android:id="@+id/mtext"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/mtext"
+                android:id="@+id/mspiner"
+                android:background="#ffffff"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/addbutton"
+                    android:fillViewport="true"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/mothertangue"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="7dp"
+                            android:hint="select language"
+                            />
+                    </RelativeLayout>
+                </ScrollView>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#f7f7f7"
+                    android:id="@+id/addbutton"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/addmore"
+                            android:id="@+id/imaged"
+                            />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country Living In"
+                android:id="@+id/contrytext"
+                android:textSize="16dp"
+                android:layout_below="@+id/mspiner"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contrytext"
+                android:id="@+id/country"
+                android:layout_marginTop="5dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    >
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/countriesspinner"
+                        >
+                    </Spinner>
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:layout_below="@+id/country"
+                android:layout_marginTop="20dp"
+                android:id="@+id/cname"
+
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cname"
+                android:id="@+id/statelayout"
+                android:layout_marginTop="5dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    >
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/state"
+                        >
+                    </Spinner>
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Physical Status"
+                android:layout_below="@+id/statelayout"
+                android:layout_marginTop="20dp"
+                android:id="@+id/phy"
+
+                />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phy"
+            android:id="@+id/physiclelayout"
+            android:layout_marginTop="5dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/physicalspinner"
+                    android:entries="@array/PhysicalState"
+                    >
+                </Spinner>
+            </RelativeLayout>
+        </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Highest Education"
+                    android:id="@+id/edu"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/physiclelayout"
+                    />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/edu"
+                android:id="@+id/educatrionlayout"
+                android:background="#ffffff"
+                android:layout_marginTop="5dp"
+
+
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/addeducaion"
+                    android:fillViewport="true"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/educationtext"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="7dp"
+                            android:hint="select Education"
+                            />
+                    </RelativeLayout>
+                </ScrollView>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#f7f7f7"
+                    android:id="@+id/addeducaion"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/addmore"
+                            android:id="@+id/imageds"
+                            />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profession"
+                    android:layout_below="@+id/educatrionlayout"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/profes"
+                    />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/profes"
+                android:id="@+id/professionlayout"
+                android:background="#ffffff"
+                android:layout_marginTop="5dp"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/addprofession"
+                    android:fillViewport="true"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/professiontext"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="7dp"
+                            android:hint="select Education"
+                            />
+                    </RelativeLayout>
+                </ScrollView>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#f7f7f7"
+                    android:id="@+id/addprofession"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/addmore"
+                            android:id="@+id/images"
+                            />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Annual Income"
+                    android:layout_below="@+id/professionlayout"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/anual"
+                    />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/anual"
+                android:id="@+id/incomelayout"
+                android:background="#ffffff"
+                android:layout_marginTop="5dp"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/addincome"
+                    android:fillViewport="true"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/incometext"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="7dp"
+                            android:hint="select Education"
+                            />
+                    </RelativeLayout>
+                </ScrollView>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#f7f7f7"
+                    android:id="@+id/addincome"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/addmore"
+                            android:id="@+id/imagee"
+                            />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape"
+                android:text="Search"
+                android:layout_marginTop="30dp"
+                android:textColor="#fff"
+                android:onClick="search"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/incomelayout"
+
+                />
+        </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

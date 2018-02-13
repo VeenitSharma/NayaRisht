@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/one"
+        android:title="Self"/>
+
+    <item
+        android:id="@+id/two"
+        android:title="Son"/>
+
+    <item
+        android:id="@+id/three"
+        android:title="Daughter"/>
+
+    <item
+        android:id="@+id/onee"
+        android:title="Brother"/>
+
+    <item
+        android:id="@+id/twow"
+        android:title="Sister"/>
+
+
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/grid_item_image"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/mandefault"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/grid_item_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:layout_marginLeft="10dp"
+            android:text="User Name"
+            android:textColor="#000"
+            android:ellipsize="marquee"
+            android:textSize="14sp" />
+
+
+
+        <TextView
+            android:id="@+id/dis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:layout_marginLeft="10dp"
+            android:text="22,Hindu"
+            android:layout_marginRight="10dp"
+            android:ellipsize="marquee"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

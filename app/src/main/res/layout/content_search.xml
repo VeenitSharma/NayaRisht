@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.villupuram.nayarishta.Search">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/red"
+        android:id="@+id/topbar"
+      >
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:id="@+id/back"
+            android:onClick="back"
+            android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/arrowwhite"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/backk"
+            android:layout_centerVertical="true"
+            />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/topbar"
+        android:layout_alignParentStart="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="30dp"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:text="Find the one who completes you"
+        android:textColor="#a3a3a3"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:text="I'm Looking for a"
+        android:textColor="#272727"
+        android:textSize="15dp" />
+
+    <RadioGroup
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:paddingTop="5dp"
+        android:weightSum="1"
+        android:layout_below="@+id/textView4"
+
+        >
+
+
+        <ImageButton
+            android:id="@+id/female_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_search_female_icon"
+            android:layout_weight="0.23"
+            android:layout_marginRight="20dp"
+        />
+
+        <ImageButton
+            android:id="@+id/male_icon"
+            android:layout_width="70dp"
+            android:layout_height="74dp"
+            android:background="@drawable/male_unslected"
+            android:layout_weight="0.23" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:text="Age"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:textColor="#272727"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/radioGroup"
+     />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/seekbarLayout"
+            android:layout_below="@+id/textView5"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/seekbartext"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:hint="18"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content" />
+
+            <!--<com.appyvet.rangebar.RangeBar-->
+                <!--android:id="@+id/seekbar2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="60dp"-->
+                <!--custom:tickStart="18"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--custom:tickEnd="70"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--custom:tickInterval="1"-->
+                <!--custom:rangeBarColor="#b5b6b5"-->
+                <!--custom:tickColor="#007aff"-->
+                <!--custom:pinColor="@color/red"-->
+                <!--custom:selectorColor="#f3f3f3"-->
+                <!--custom:selectorSize="15dp"-->
+                <!--android:layout_alignParentTop="true" />-->
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                android:id="@+id/seekbar2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                custom:min_value="18"
+                custom:max_value="70"
+                custom:left_thumb_color="#f3f3f3"
+                custom:right_thumb_color="#f3f3f3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentTop="true"
+                custom:bar_color="#f95959"
+                custom:bar_highlight_color="@color/red"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/seekbar_right"
+                android:hint="70"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="11dp"
+            android:paddingTop="5dp"
+            android:text="Height"
+            android:textSize="15dp"
+            android:textColor="#717171"
+            android:layout_below="@+id/seekbarLayout"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/heightoption"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@+id/height"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f3f3f3"
+                android:layout_weight="1"
+                android:layout_marginRight="4dp"
+                >
+                <Spinner
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/heightfrom"
+                    android:entries="@array/heightA"
+
+                    >
+
+                </Spinner>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to"
+                android:layout_gravity="center_vertical"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f3f3f3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                >
+                <Spinner
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/heightto"
+                    android:entries="@array/heightB"
+
+
+                    >
+
+                </Spinner>
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="11dp"
+        android:paddingTop="5dp"
+        android:text="Religion"
+        android:textSize="15dp"
+        android:textColor="#272727"
+
+        android:layout_below="@+id/heightoption"
+       />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:id="@+id/spinnerid"
+
+        android:background="#f3f3f3"
+        >
+
+    <Spinner
+        android:id="@+id/spinnerone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="20dp"
+        android:paddingTop="5dp"
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textSize="15dp"
+        android:text="Occupation"
+        android:paddingTop="5dp"
+        android:layout_marginTop="13dp"
+        android:textColor="#272727"
+        android:layout_below="@+id/spinnerid"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:id="@+id/sp2"
+
+        android:background="#f3f3f3"
+        >
+
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingTop="5dp"
+        android:entries="@array/Occupation"/>
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/shape"
+        android:text="Search"
+
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:onClick="gotoSearchResults"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/sp2"
+
+         />
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

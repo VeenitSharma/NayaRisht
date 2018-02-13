@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/app_bar_try">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:id="@+id/topsec"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/dash"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:id="@+id/sec1"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/addphotobtn"
+                            android:layout_marginTop="20dp"
+                            >
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:id="@+id/addphoto"
+
+                                >
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/user_image"
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:src="@drawable/user"
+                                    android:background="@drawable/user_photo"
+                                    app:civ_border_width="2dp"
+                                    app:civ_border_color="#ffffff"/>
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/camera"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"
+                                    android:id="@+id/camera"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add Photo"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_marginTop="7dp"
+                                    android:id="@+id/addtext"
+                                    android:layout_below="@+id/camera"
+                                    android:layout_centerHorizontal="true" />
+
+
+
+
+                            </RelativeLayout>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/addphotobtn"
+
+
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NAME: "
+                                android:textColor="#fff"
+                                android:textSize="17dp"
+                                android:id="@+id/textuser">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"
+                                android:layout_toRightOf="@id/textuser"
+                                android:id="@+id/utext"
+                                android:textAllCaps="true"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ID: NRUP"
+                                android:textColor="#ffffff"
+                                android:id="@+id/profileId"
+                                android:textSize="17dp"
+                                android:layout_below="@+id/utext"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="#ffffff"
+                                android:id="@+id/pidtext"
+                                android:layout_marginLeft="2dp"
+                                android:textSize="17dp"
+                                android:layout_toRightOf="@id/profileId"
+                                android:layout_below="@+id/utext"
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:id="@+id/addphotoalbum"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:visibility="invisible"
+                            android:onClick="open"
+                            android:background="#000"
+                            android:alpha="0.6"
+
+                            >
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/button"
+                                android:text="Add Photo"
+                                android:textAllCaps="false"
+                                android:textColor="@color/red"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                />
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/topsec"
+            android:id="@+id/sec3"
+            android:background="#ffffff">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/sec2"
+            android:weightSum="3"
+            android:gravity="center_vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:id="@+id/go_profile"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="26dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_profile_selected"
+                    android:id="@+id/pic1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pic1"
+                    android:text="My Profile"
+                    android:id="@+id/profile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/go_album"
+                android:layout_marginLeft="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                >
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="26dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_album_unselected"
+                    android:id="@+id/pic2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pic2"
+                    android:text="My Album"
+                    android:id="@+id/album"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/go_ps"
+                >
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/ic_psetting_unselected"
+                    android:id="@+id/pic3"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pic3"
+                    android:text="Partner Settings"
+                    android:id="@+id/ps"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_marginTop="5dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/sec3"
+                android:id="@+id/main_fragment"
+                >
+
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.villupuram.nayarishta.try_One"
+                    android:id="@+id/one"
+                    >
+
+                </fragment>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+</RelativeLayout>

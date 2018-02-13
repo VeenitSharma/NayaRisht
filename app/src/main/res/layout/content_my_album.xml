@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.villupuram.nayarishta.MyAlbum"
+    tools:showIn="@layout/app_bar_my_album">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/g"
+                android:id="@+id/topsec"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/dash"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:id="@+id/sec1"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/addphotobtn"
+                            android:layout_marginTop="20dp"
+                            >
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/addphotocircle"
+                                    />
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/camera"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"
+                                    android:id="@+id/camera"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add Photo"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/camera"
+                                    />
+
+
+
+
+                            </RelativeLayout>
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/addphotobtn"
+
+
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nandita Goswami"
+                                android:textColor="#ffffff"
+                                android:textSize="20dp"
+                                android:id="@+id/one"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NRID00001"
+                                android:textColor="#ffffff"
+                                android:id="@+id/two"
+                                android:textSize="17dp"
+                                android:layout_below="@+id/one"
+                                />
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/topsec"
+                android:id="@+id/sec3"
+                android:background="#ffffff"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/sec2"
+                    android:weightSum="3"
+                    android:gravity="center_vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:id="@+id/go_profile"
+                        >
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="26dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/up"
+                            android:id="@+id/pic1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pic1"
+                            android:text="My Profile"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="26dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/ic_album_selected"
+                            android:id="@+id/pic2"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pic2"
+                            android:text="My Album"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/yellow"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:id="@+id/go_ps"
+                        >
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="26dp"
+                            android:background="@drawable/ic_psetting_unselected"
+                            android:id="@+id/pic3"
+                            android:layout_centerHorizontal="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pic3"
+                            android:text="Partner Settings"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginTop="5dp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+            <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/grid_view"
+                android:numColumns="auto_fit"
+                android:gravity="center"
+                android:layout_below="@+id/sec3"
+                android:columnWidth="150dp"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+            </GridView>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

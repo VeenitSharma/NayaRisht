@@ -1,0 +1,456 @@
+<resources>
+    <string name="app_name">Naya Rishta</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_search">Search</string>
+
+    <string name="facebook_app_id">269767753528834</string>
+    <string name="fb_login_protocol_scheme">fb269767753528834</string>
+    <string name="server_client_id">1080503703383-8tsp6fqo2ba3bcov9nd1surpi22po31l.apps.googleusercontent.com</string>
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="logingoogle">Loging google</string>
+    <string name="Loading">Loading</string>
+
+    <string name="profile_for">profile_for</string>
+    <string name="title">select profile for</string>
+
+    <string-array name="profile">
+        <item>select profile for</item>
+        <item>Self</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="PhysicalState">
+        <item>"Dosen't Matter"</item>
+        <item>None</item>
+        <item>Physically Challenged</item>
+    </string-array>
+
+    <string-array name="relegion">
+        <item>Select</item>
+        <item>"Dosen't Matter"</item>
+        <item>Hindu</item>
+        <item>Muslim</item>
+        <item>Christian</item>
+        <item>Sikh</item>
+        <item>Judaism</item>
+        <item>Buddhist</item>
+        <item>Atheist</item>
+        <item>Jain</item>
+        <item>Bahai</item>
+    </string-array>
+
+
+    <string-array name="children">
+        <item>select</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="maritalstats">
+        <item>"Select"</item>
+        <item>Never Married</item>
+        <item>Divorced</item>
+        <item>Widowed</item>
+        <item>Awaiting Divorce</item>
+        <item>Annulled</item>
+
+
+    </string-array>
+
+    <string-array name="Countries">
+        <item>"Doesn't matter"</item>
+        <item>United Kingdom</item>
+    </string-array>
+
+    <string-array name="ShowNun">
+        <item>select</item>
+    </string-array>
+    <string name="EditCountries">Select</string>
+    <string-array name="EditCountries">
+        <item>United kingdom</item>
+        <item>US</item>
+        <item>Other</item>
+    </string-array>
+    <string name="EditPersonalDetails">-Select-</string>
+    <string-array name="EditPersonalDetails">
+        <item>-select-</item>
+        <item>Select Special Cases</item>
+        <item>None</item>
+        <item>Physically Challenged from birth</item>
+        <item>Physically Challenged due to accident</item>
+        <item>Mentally Challenged from birth</item>
+        <item>Mentally Challenged due to accident</item>
+        <item>Physically abnormality affecting only looks</item>
+        <item>Physically abnormality affecting bodily functions</item>
+        <item>Physically and Mentally Challenged</item>
+    </string-array>
+    <string name="EditpsBodytype">-Select-</string>
+    <string-array name="EditpsBodytype">
+        <item>-select-</item>
+        <item>Slim</item>
+        <item>Average|Athletic</item>
+        <item>Heavy</item>
+    </string-array>
+    <string name="EditpsComplexion">-Select-</string>
+    <string-array name="EditpsComplexion">
+        <item>-select-</item>
+        <item>Fair</item>
+        <item>Wheatish</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="fromname">
+        <item>--</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="am_or_pm">
+        <item>--</item>
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string-array name="family_values">
+        <item>--</item>
+        <item>Traditional</item>
+        <item>Moderate</item>
+        <item>Liberal</item>
+    </string-array>
+    <string-array name="family_type">
+        <item>--</item>
+        <item> Joint Family </item>
+        <item>Nuclear Family</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="display_option_contact">
+        <item>-select-</item>
+        <item>Show to All Paid Members </item>
+        <item>Show to only Members I Accept / Express Interest In</item>
+    </string-array>
+
+    <string-array name="heightA">
+        <item>-Select-</item>
+        <item>"4'5' - 134cm"</item>
+        <item>"4'6' - 137cm"</item>
+        <item>"4'7' - 139cm"</item>
+        <item>"4'8' - 142cm"</item>
+        <item>"4'9' - 144cm"</item>
+        <item>"4'10' - 147cm"</item>
+        <item>"4'11' - 149cm"</item>
+        <item>"5'' - 152cm"</item>
+        <item>"5'1' - 154cm"</item>
+        <item>"5'2' - 157cm"</item>
+        <item>"5'3' - 160cm"</item>
+        <item>"5'4' - 162cm"</item>
+        <item>"5'5' - 165cm"</item>
+        <item>"5'6' - 167cm"</item>
+        <item>"5'7' - 170cm"</item>
+        <item>"5'6' - 172cm"</item>
+        <item>"5'9' - 175cm"</item>
+        <item>"5'10' - 177cm"</item>
+        <item>"5'11' - 180cm"</item>
+        <item>"6'' - 182cm"</item>
+        <item>"6'1' - 185cm"</item>
+        <item>"6'2' - 187cm"</item>
+        <item>"6'3' - 190cm"</item>
+        <item>"6'4' - 193cm"</item>
+        <item>"6'5' - 195cm"</item>
+        <item>"6'6' - 198cm"</item>
+        <item>"6'7' - 200cm"</item>
+        <item>"6'8' - 203cm"</item>
+        <item>"6'9' - 205cm"</item>
+        <item>"6'10' - 208cm"</item>
+        <item>"6'11' - 210cm"</item>
+        <item>"7'1' - 213cm"</item>
+    </string-array>
+
+    <string-array name="heightB">
+        <item>-Select-</item>
+        <item>"4'5' - 134cm"</item>
+        <item>"4'6' - 137cm"</item>
+        <item>"4'7' - 139cm"</item>
+        <item>"4'8' - 142cm"</item>
+        <item>"4'9' - 144cm"</item>
+        <item>"4'10' - 147cm"</item>
+        <item>"4'11' - 149cm"</item>
+        <item>"5'' - 152cm"</item>
+        <item>"5'1' - 154cm"</item>
+        <item>"5'2' - 157cm"</item>
+        <item>"5'3' - 160cm"</item>
+        <item>"5'4' - 162cm"</item>
+        <item>"5'5' - 165cm"</item>
+        <item>"5'6' - 167cm"</item>
+        <item>"5'7' - 170cm"</item>
+        <item>"5'6' - 172cm"</item>
+        <item>"5'9' - 175cm"</item>
+        <item>"5'10' - 177cm"</item>
+        <item>"5'11' - 180cm"</item>
+        <item>"6'' - 182cm"</item>
+        <item>"6'1' - 185cm"</item>
+        <item>"6'2' - 187cm"</item>
+        <item>"6'3' - 190cm"</item>
+        <item>"6'4' - 193cm"</item>
+        <item>"6'5' - 195cm"</item>
+        <item>"6'6' - 198cm"</item>
+        <item>"6'7' - 200cm"</item>
+        <item>"6'8' - 203cm"</item>
+        <item>"6'9' - 205cm"</item>
+        <item>"6'10' - 208cm"</item>
+        <item>"6'11' - 210cm"</item>
+        <item>"7'1' - 213cm"</item>
+    </string-array>
+
+    <string-array name="childrens">
+        <item>No</item>
+        <item>two</item>
+        <item>one</item>
+
+    </string-array>
+
+    <string-array name="maritalstatus">
+        <item>"Doesn't Matter"</item>
+        <item>Never Married</item>
+        <item>Divorced</item>
+        <item>Awaiting Divorce</item>
+    </string-array>
+
+
+    <string-array name="drinking">
+        <item>"Doesn't Matter"</item>
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <string-array name="smoking">
+        <item>"Doesn't Matter"</item>
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <string-array name="lookingfor">
+        <item>Groom</item>
+        <item>Bride</item>
+    </string-array>
+
+    <string-array name="fdsg">
+        <item>"Dosen't Matter"</item>
+    </string-array>
+    <string-array name="community">
+        <item>"Doesn't matter"</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="diet">
+        <item>-select-</item>
+        <item>Veg</item>
+        <item>Occasionally Non-Veg|Non-Veg </item>
+        <item>Jain</item>
+        <item>Vegan</item>
+    </string-array>
+
+    <string-array name="drink">
+        <item>-select-</item>
+        <item>No</item>
+        <item>Drinks</item>
+        <item>Occasionally</item>
+        <item>Vegan</item>
+    </string-array>
+    <string-array name="Smoke">
+        <item>-select-</item>
+        <item>No</item>
+        <item>Smoke </item>
+        <item>Occasionally</item>
+    </string-array>
+    <string-array name="Blood">
+        <item>-select-</item>
+        <item>"Don't Know"</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+
+
+    </string-array>
+
+
+    <string name="Occupation">Occupation</string>
+    <string-array name="Occupation">
+        <item>Employee</item>
+        <item>Student</item>
+        <item>Business</item>
+    </string-array>
+    <string name="Height">Height</string>
+    <string-array name="Height">
+        <item> <item>"4'5' - 134cm"</item>
+        <item>"4'6' - 137cm"</item>
+        <item>"4'7' - 139cm"</item>
+        <item>"4'8' - 142cm"</item>
+        <item>"4'9' - 144cm"</item>
+        <item>"4'10' - 147cm"</item>
+        <item>"4'11' - 149cm"</item>
+        <item>"5'' - 152cm"</item>
+        <item>"5'1' - 154cm"</item>
+        <item>"5'2' - 157cm"</item>
+        <item>"5'3' - 160cm"</item>
+        <item>"5'4' - 162cm"</item>
+        <item>"5'5' - 165cm"</item>
+        <item>"5'6' - 167cm"</item>
+        <item>"5'7' - 170cm"</item>
+        <item>"5'6' - 172cm"</item>
+        <item>"5'9' - 175cm"</item>
+        <item>"5'10' - 177cm"</item>
+        <item>"5'11' - 180cm"</item>
+        <item>"6'' - 182cm"</item>
+        <item>"6'1' - 185cm"</item>
+        <item>"6'2' - 187cm"</item>
+        <item>"6'3' - 190cm"</item>
+        <item>"6'4' - 193cm"</item>
+        <item>"6'5' - 195cm"</item>
+        <item>"6'6' - 198cm"</item>
+        <item>"6'7' - 200cm"</item>
+        <item>"6'8' - 203cm"</item>
+        <item>"6'9' - 205cm"</item>
+        <item>"6'10' - 208cm"</item>
+        <item>"6'11' - 210cm"</item>
+        <item>"7'1' - 213cm"</item></item>
+
+    </string-array>
+    <string-array name="To">
+        <item> <item>"4'5' - 134cm"</item>
+        <item>"4'6' - 137cm"</item>
+        <item>"4'7' - 139cm"</item>
+        <item>"4'8' - 142cm"</item>
+        <item>"4'9' - 144cm"</item>
+        <item>"4'10' - 147cm"</item>
+        <item>"4'11' - 149cm"</item>
+        <item>"5'' - 152cm"</item>
+        <item>"5'1' - 154cm"</item>
+        <item>"5'2' - 157cm"</item>
+        <item>"5'3' - 160cm"</item>
+        <item>"5'4' - 162cm"</item>
+        <item>"5'5' - 165cm"</item>
+        <item>"5'6' - 167cm"</item>
+        <item>"5'7' - 170cm"</item>
+        <item>"5'6' - 172cm"</item>
+        <item>"5'9' - 175cm"</item>
+        <item>"5'10' - 177cm"</item>
+        <item>"5'11' - 180cm"</item>
+        <item>"6'' - 182cm"</item>
+        <item>"6'1' - 185cm"</item>
+        <item>"6'2' - 187cm"</item>
+        <item>"6'3' - 190cm"</item>
+        <item>"6'4' - 193cm"</item>
+        <item>"6'5' - 195cm"</item>
+        <item>"6'6' - 198cm"</item>
+        <item>"6'7' - 200cm"</item>
+        <item>"6'8' - 203cm"</item>
+        <item>"6'9' - 205cm"</item>
+        <item>"6'10' - 208cm"</item>
+        <item>"6'11' - 210cm"</item>
+        <item>"7'1' - 213cm"</item></item>
+
+    </string-array>
+    <string name="MaritalStatus">Marital Status</string>
+    <string-array name="MaritalStatus">
+        <item>never married</item>
+    </string-array>
+    <string name="HaveChildren">Have Children</string>
+    <string-array name="HaveChildren">
+        <item>never married</item>
+    </string-array>
+    <string name="title_activity_search_results">SearchResults</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_contact">Contact</string>
+    <string name="title_activity_partner_setting">PartnerSetting</string>
+    <string-array name="name">
+        <item>Rachit</item>
+        <item>Shyam</item>
+        <item>Trapti</item>
+        <item>Satish</item>
+        <item>Ram</item>
+        <item>Amar</item>
+        <item>Luv</item>
+    </string-array>
+    <string-array name="desc">
+        <item>SH000S3</item>
+        <item>SH000S3</item>
+        <item>SH000S3</item>
+        <item>SH000S3</item>
+        <item>SH000S3</item>
+        <item>SH000S3</item>
+        <item>SH000S3</item>
+    </string-array>
+    <string-array name="address">
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+    </string-array>
+    <string-array name="detail">
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+    </string-array>
+    <string-array name="message">
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+        <item>Moradabad,India</item>
+    </string-array>
+    <string name="title_activity_my_album">MyAlbum</string>
+    <string name="title_activity_my_profile">MyProfile</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="title_activity_chat_box">ChatBox</string>
+    <string name="title_activity_mother_tongue">MotherTongue</string>
+    <string name="title_activity_search_click">SearchClick</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+</resources>

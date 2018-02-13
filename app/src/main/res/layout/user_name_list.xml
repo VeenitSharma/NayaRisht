@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userlayout"
+        >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="15dp"
+        android:layout_margin="4dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/user"
+            app:civ_border_width="1dp"
+            android:layout_gravity="center_vertical"
+            app:civ_border_color="#8c8787">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vinit"
+            android:layout_marginLeft="60dp"
+            android:textColor="#9c9090"
+            android:textAllCaps="true"
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/currentusername"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/online"
+            android:layout_gravity="right"
+            />
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

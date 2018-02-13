@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_home_white_18dp"
+            android:title="HOME" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_error_outline_white_18dp"
+            android:title="ABOUT" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/membership_design"
+            android:title="MEMBERSHIP" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_perm_contact_calendar_white_18dp"
+            android:title="CONTACT" />
+        <item
+            android:id="@+id/nav_manage1"
+            android:icon="@drawable/ic_search_white_18dp"
+            android:title="SEARCH" />
+
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgbackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.villupuram.nayarishta.Login"
+    tools:showIn="@layout/activity_login">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+
+        
+
+        >
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textColorHint="@android:color/white"
+        android:hint="Login Id"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:textColorHint="@android:color/white"
+        android:hint="Login Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="gotoChat"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_orange_light"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/textView_register"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_submit"
+        android:layout_alignStart="@+id/button_submit"
+        android:layout_below="@+id/button_submit"
+        android:layout_marginTop="17dp"
+        android:textColor="@android:color/background_light"
+        android:text="Don't have an account ?" />
+
+    <Button
+        android:id="@+id/button_forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:text="Forgot Password" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_submit"
+        android:layout_alignRight="@+id/button_submit"
+        android:layout_alignTop="@+id/textView_register"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_toEndOf="@+id/textView_register"
+        android:layout_toRightOf="@+id/textView_register"
+        android:text="Register"
+        android:textColor="@android:color/holo_orange_light" />
+
+</RelativeLayout>

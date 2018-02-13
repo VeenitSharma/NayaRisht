@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.villupuram.nayarishta.Compose">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/red"
+        android:id="@+id/topbar"
+        >
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:onClick="back"
+            android:id="@+id/back"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/arrowwhite"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/backk"
+                android:layout_centerVertical="true"
+                />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compose"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drafts"
+            android:background="@android:color/transparent"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/drafts"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="17dp"
+            android:id="@+id/etext"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/shapeforprofile"
+            android:layout_height="34dp"
+            android:layout_below="@+id/etext"
+            android:layout_marginTop="5dp"
+            android:id="@+id/emaillayout"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:hint="Enter email"
+                android:paddingLeft="5dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/emailtext"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emaillayout"
+            android:layout_marginTop="10dp"
+            android:id="@+id/sub"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textSize="17dp"
+                android:id="@+id/jhk"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/jhk"
+                android:background="@drawable/shapeforprofile"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/subject"
+                    android:textSize="17dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000"
+                    android:paddingLeft="5dp"
+                    android:hint="Enter subject"
+                    android:background="@android:color/transparent"
+
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textSize="17dp"
+                android:id="@+id/jhkk"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/jhkk"
+                android:background="@drawable/shapeforprofile"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/message"
+                android:textSize="17dp"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:hint="Enter message"
+                android:background="@android:color/transparent"
+
+                />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/shape"
+            android:text="Send"
+            android:textColor="#fff"
+            android:id="@+id/send"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

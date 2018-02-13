@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:context="com.villupuram.nayarishta.SplashCompleteProfile">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#b61b1b"
+        android:id="@+id/topbar"
+        android:padding="10dp"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPLETE YOUR PROFILE"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/logout"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:background="#000"
+        android:layout_above="@+id/bottom"
+        android:alpha="0.5">
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/textlayout"
+        android:layout_centerVertical="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="We are almost done!"
+            android:textColor="#f6e1d8"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:id="@+id/one"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have been Registered Successfully!"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/one"
+            android:layout_marginTop="10dp"
+            android:id="@+id/two"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/onelayout"
+            android:layout_below="@+id/two"
+            android:layout_centerHorizontal="true"
+            >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Nayarishta Account, An OTP has been"
+            android:layout_below="@+id/two"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="2dp"
+            android:id="@+id/three"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:id="@+id/twolayout"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/onelayout"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/onelayout"
+            android:id="@+id/senttext"
+            android:textColor="#ffffff"
+            android:text="sent to"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailtext"
+                android:textColor="#ffffff"
+                android:text=""
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/twolayout"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/threelayout"
+            android:weightSum="1"
+            android:layout_centerHorizontal="true"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/emailtext"
+                android:id="@+id/forth"
+                android:layout_weight="1"
+                android:layout_below="@+id/three"
+                android:textColor="#ffffff"
+                android:text="account. .Please enter an OTP in given field"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/threelayout"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+
+
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/cp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#ffffff"
+        android:alpha="0.9"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/resend"
+        android:layout_marginBottom="10dp"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            android:id="@+id/otpfield"
+            android:lines="1"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:hint="Enter OTP"
+            android:background="@android:color/transparent"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#b61b1b"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Continue"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/continuetext"
+            />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/continuetext"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/warrow"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Resend OTP"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:id="@+id/resend"
+        android:textColor="@color/yellow"
+        android:gravity="center_horizontal"
+
+        android:background="@android:color/transparent"
+
+        android:layout_above="@+id/bottom"
+        android:layout_marginBottom="5dp"
+        />
+</RelativeLayout>
+

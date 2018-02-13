@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.villupuram.nayarishta.Dashboard"
+    tools:showIn="@layout/app_bar_dashboard">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/scroll"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/topsec"
+            android:background="@drawable/dash"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:id="@+id/sec1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/addphotobtn"
+                    android:layout_marginTop="20dp"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:id="@+id/addphoto"
+
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/user_image"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:background="@drawable/userprofile"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#ffffff"/>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tryd"
+                    android:layout_toRightOf="@+id/addphotobtn"
+
+
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NAME: "
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        android:id="@+id/textuser">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="hjfhgfhgfghfhgfhggfh"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:layout_toRightOf="@id/textuser"
+                        android:id="@+id/utext"
+                        android:textAllCaps="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID: NRUP"
+                        android:textColor="#ffffff"
+                        android:id="@+id/profileId"
+                        android:textSize="17dp"
+                        android:layout_below="@+id/utext"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:id="@+id/pidtext"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="17dp"
+                        android:layout_toRightOf="@id/profileId"
+                        android:layout_below="@+id/utext"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/addphotoalbum"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:onClick="open"
+                    android:background="#000"
+                    android:alpha="0.3"
+
+                    >
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/addphotobtn"
+                    android:id="@+id/updatelayout"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="match_parent">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update Profile"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:id="@+id/update"
+                        />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/warrow"
+                        android:layout_toRightOf="@+id/update"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/topsec"
+        android:text="My Profile"
+        android:textColor="#828282"
+        android:background="#f8f8f8"
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:id="@+id/mypro"
+        />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/mypro"
+            android:background="#ffffff"
+            android:id="@+id/profilefields"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sec6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Member Type"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:id="@+id/protext"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="150dp"
+                    />
+
+                <TextView
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="Free / Activated"
+                    android:id="@+id/ptext"
+                    android:textSize="16dp"
+                    android:layout_alignParentRight="true"
+
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sec6"
+                android:id="@+id/sec7"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profile updated on"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:id="@+id/dob"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="150dp"
+                    />
+
+                <TextView
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text=" 23-08-2017"
+                    android:textSize="16dp"
+                    android:id="@+id/dtext"
+                    android:layout_alignParentRight="true"
+
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sec7"
+                android:id="@+id/sec8"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Profile Count"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:id="@+id/age"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="150dp"
+                    />
+
+                <TextView
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="1999"
+                    android:id="@+id/atext"
+                    android:textSize="16dp"
+                    android:layout_alignParentRight="true"
+
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="New Matches"
+            android:textColor="#828282"
+            android:background="#f8f8f8"
+            android:layout_below="@+id/profilefields"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:id="@+id/sec2"
+            android:layout_marginTop="10dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f0f0f0"
+            android:layout_below="@+id/sec2"
+            android:padding="10dp"
+            android:id="@+id/sec3"
+            >
+
+            <com.villupuram.nayarishta.ExpandableHeightGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:columnWidth="200dp"
+                android:stretchMode="columnWidth"
+                android:isScrollContainer="false"
+                android:verticalSpacing="14dp"
+               >
+
+            </com.villupuram.nayarishta.ExpandableHeightGridView>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Record Found."
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:id="@+id/hiddentext"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
